@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Click&Garfo</title>
+  <link rel="stylesheet" href="/assets/css/styleCadastro.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="left-panel">
+        <div class="branding">
+            <img src="../assets/img/logo.png" alt="Logo" />
+            <h1>Click&Garfo</h1>
+            <strong class="slogan">Entre e peça em segundos!<br></strong>
+            <strong>Sua comida a poucos cliques de distância.</strong>
+            <p class="description">Faça login para acessar restaurantes perto de você, repetir seus <br>pedidos favoritos e receber tudo com agilidade.</p>
+        </div>
+        </div>
+
+    <!-- Painel direito com formulário de cadastro -->
+    <div class="right-panel">
+      <div class="form-container">
+        
+        <!-- Link de voltar -->
+        <a href="../pages/login.html" class="back-link">← Voltar</a>
+
+        <h2>Cadastre-se</h2>
+        <p class="subtitle">Preencha os campos abaixo para entrar na plataforma...</p>
+        
+        <form>
+            
+            <div class="input-group">
+            <label for="email">E-mail</label>
+            <div class="input-field">
+                <input type="email" id="email" placeholder="jhonDoe@example.com" required>
+                <i class="bi bi-person"></i>
+            </div>
+            </div>
+
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <div class="input-field">
+                    <input type="text" id="name" placeholder="Digite seu nome..." required>
+                    <i class="bi bi-person"></i>
+                </div>
+                </div>
+
+            <div class="input-group">
+                <label for="phone">Telefone</label>
+                <div class="input-field">
+                    <input type="tel" id="phone" placeholder="+xx (xx) xxxx-xxxx" required>
+                    <i class="bi bi-person"></i>
+                </div>
+                </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <div class="input-field">
+                    <input type="password" id="password" placeholder="Digite sua senha..." required>
+                    <i class="bi bi-person"></i>
+                </div>
+                </div>
+            
+            <div class="input-group">
+                <label for="confirm-password">Confirmar sua senha</label>
+                <div class="input-field">
+                    <input type="password" id="confirm-password" placeholder="Digite sua senha..." required>
+                    <i class="bi bi-person"></i>
+                </div>
+                </div>
+
+                <!-- Botão principal -->
+                <button type="submit" class="btn btn-login">Cadastrar-se</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

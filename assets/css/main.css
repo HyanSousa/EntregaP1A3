@@ -1,0 +1,593 @@
+:root {
+    --primary-color: #FF7A00;
+    --secondary-color: #FFF6ED;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --gray: #adadad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+    color: var(--text-color);
+}
+
+.sidebar {
+    display: flex;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    border: 1px dotted #f0f0f0;
+    border-color: #e06b00;
+    overflow-y: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+}
+
+.logo img {
+    width: 80px;
+    margin-right: 0px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+}
+
+.nav-item:hover {
+    background-color: #fde8d5;
+    color: #000;
+    border-left: 4px solid #f57c00;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.nav-item.active {
+    background-color: #fde8d5;
+    color: #000;
+    border-left: 4px solid #f57c00;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.nav-item i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 750px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #ea7b22;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 25px;
+}
+
+.cart-header i {
+    background: none;
+    outline: none;
+    color: #ea7b22;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 210px;
+    font-size: 35px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+
+.user-info span {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.hero-offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+.hero-banner {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    width: 1000px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 70%;
+    z-index: 2;
+}
+.hero-content span {
+    font-style: italic;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.offers {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offer-header {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.discount-tag {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.offer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.offer-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.offer-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-content h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.offer-content p {
+    font-size: 12px;
+    color: #666;
+}
+
+.hero-offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FF7A00;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.category {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 110px;
+    width: 97px;
+    font-weight: bold;
+}
+
+.category img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.category p {
+    font-size: 12px;
+}
+
+/* Product Grid */
+.products-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.products-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.products-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+}
+
+.product-card {
+    width: 20px;
+    min-width: 200px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Keyframes para movimento contínuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.product-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-title span {
+    margin-right: 5px;
+}
+
+.product-title h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.product-price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.add-to-cart {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e06b00;
+}
+
+/* Responsiveness */
+/* === Telas grandes: até 1200px === */
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* === Telas médias: até 992px === */
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 80px;
+    }
+
+    .sidebar {
+        width: 80px;
+    }
+
+    .logo span,
+    .nav-item span,
+    .profile-section p {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img,
+    .nav-item i {
+        margin-right: 0;
+    }
+
+    .nav-item {
+        justify-content: center;
+        padding: 15px 0;
+    }
+}
+
+/* === Telas pequenas: até 768px === */
+@media (max-width: 768px) {
+    .hero-content,
+    .hero-banner,
+    .offers {
+        width: 100%;
+    }
+
+    .hero-offers-container {
+        flex-direction: column;
+    }
+
+    .hero-image,
+    .user-info {
+        display: none;
+    }
+
+    .products-carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .products-track {
+        animation: none;
+        flex-wrap: nowrap;
+    }
+
+    .product-card {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+/* === Telas muito pequenas: até 576px === */
+@media (max-width: 576px) {
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+        padding-bottom: 70px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        border-radius: 0;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .logo,
+    .profile-section {
+        display: none;
+    }
+
+    .sidebar .nav-items {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-item {
+        flex: 1;
+        padding: 10px 0;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item i {
+        margin: 0 0 5px 0;
+    }
+
+    .nav-item span {
+        display: block;
+        font-size: 10px;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .categories {
+        gap: 10px;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .offer-content h4,
+    .offer-content p {
+        word-break: break-word;
+    }
+}
+
+/* === Telas muito estreitas: até 400px === */
+@media (max-width: 400px) {
+    .product-title h3 {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .product-description {
+        height: auto;
+    }
+}
+

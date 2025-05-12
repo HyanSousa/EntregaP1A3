@@ -1,0 +1,193 @@
+/* cadastro */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Corpo da página */
+  body {
+    background-color: #f4f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Container principal dividido meio a meio */
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Painel esquerdo: fundo escuro com gradiente */
+  .left-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    height: 100vh;
+    background: 
+    radial-gradient(circle at top right, rgba(230, 126, 34, 0.5), transparent 30%),
+    linear-gradient(to bottom, #000000, #1a1a1a);
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  /* Estilo da marca do lado esquerdo */
+  .branding {
+    text-align: center;
+  }
+  
+  .branding img {
+    width: 100px;
+    margin-bottom: 0px;
+  }
+  
+  .branding h1 {
+    color: rgb(230, 126, 34);
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .branding .slogan {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .branding .description {
+    font-size: 13px;
+    color: #bbb;
+  }
+  
+  /* Painel direito: fundo claro com formulário */
+  .right-panel {
+    width: 50%; /* Outra metade da tela */
+    background-color: #f4f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Painel direito (formulário) - 60% da largura */
+  .right-panel {
+    width: 50%;
+    background-color: #f4f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container do formulário */
+  .form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 450px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Título e subtítulo do formulário */
+  .form-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .form-container .subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de entrada */
+  .form-container label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Link de "Esqueceu sua senha?" */
+  .forgot {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    color: #999;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  
+  .forgot:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botões principais */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Botão laranja */
+  .btn-login {
+    background-color: rgb(230, 126, 34);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn-login:hover {
+    background-color: darkorange;
+  }
+  
+  /* Botão branco (link) estilizado */
+  .btn-register {
+    background-color: #fff;
+    color: rgb(230, 126, 34);
+    border: 1px solid orange;
+    margin-top: 10px;
+  }
+  
+  .btn-register:hover {
+    background-color: #ffe7cc;
+  }
+  
+  /* Permite que <a> com classe .btn fique igual botão */
+  a.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Link "voltar" no topo */
+  .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
