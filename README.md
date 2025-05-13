@@ -80,4 +80,5 @@ https://www.figma.com/design/j5UvPh6YiVikIwK55nkrDH/Case-de-estudo?node-id=733-7
 * *Mateus Cardoso da Silva - 12718110473*
 * *Luis Claudio de Oliveira Filho - 12723212051*
 * *Caique Luan Oliveira Silva - 12725136785*
+* *José Felipe Amorim Gerez - 12725158186*
 
