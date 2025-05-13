@@ -67,13 +67,17 @@
 https://www.figma.com/design/j5UvPh6YiVikIwK55nkrDH/Case-de-estudo?node-id=733-790&t=fATt3HDNFOvwQYvN-1
 
 # ✒️ Autores
-**Docentes da UC** 
+## Docentes da UC 
 * *Thiago Neves* 
 * *Lucas Silva*
 ****
-**Membros da equipe**
+## Membros da equipe
 * *Gabriel Enzo Coutinho de Melo - 1272412136*
 * *Gustavo Gantois Caria Carvalho - 1272325306*
 * *Hyan Gabriel Sousa Santos - 1272323932*
 * *Arthur de Souza Carvalho - 12723120130*
+* *Gabriel Batista Alves - 12725157326*
+* *Mateus Cardoso da Silva - 12718110473*
+* *Luis Claudio de Oliveira Filho - 12723212051*
+* *Caique Luan Oliveira Silva - 12725136785*
 
