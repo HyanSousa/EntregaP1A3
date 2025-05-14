@@ -66,6 +66,10 @@
 # Link para acessar protótipo no Figma e WireFrame
 https://www.figma.com/design/j5UvPh6YiVikIwK55nkrDH/Case-de-estudo?node-id=733-790&t=fATt3HDNFOvwQYvN-1
 
+# Arquivo pdf das Heurísticas
+[Heuristica-Restaurante.pdf](https://github.com/user-attachments/files/20198671/Heuristica-Restaurante.pdf)
+
+
 # ✒️ Autores
 ## Docentes da UC 
 * *Thiago Neves* 
